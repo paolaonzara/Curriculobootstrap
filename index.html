@@ -4,30 +4,176 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <link href="css\bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
 
   </head>
   <body>
     <header>
-        <nav>
-          <!--aqui será minha navbar com menu ancora-->
-          <div>
-            <ul>
-              <li><!--aqui sera os botoes. modificar para olado esquerdo--></li>
-              <li><!--<a>Início<a>--></li>
-              <li><!--<a>Sobre<a>--></li>
-              <li><!--<a>Habilidades<a>--></li>
-              <li><!--<a>Serviços<a>--></li>
-              <li><!--<a>Portofolio<a>--></li>
-              <li><!--<a>Contato<a>--></ul>
+      <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#Início">Paola Onório Zaratini</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="ms-auto navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#Início">Início</a>
+              <a class="nav-link" href="#Sobre">Sobre</a>
+              <a class="nav-link" href="#Habilidades">Habilidades</a>
+             
+              <a class="nav-link" href="#Portofólio">Portofolio</a>
+              <a class="nav-link" href="#Contato">Contato</a>
+            </div>
           </div>
-        </nav>
+        </div>
+      </nav>
     </header>
-    <div>
-      <!--conteudo sobre mim e outros topicos-->
+    <section id="Início">
+    <div class="container intro-section">
+      <div class="intro-text">
+          <h2>Olá, eu sou a Paola!</h2>
+          <p>Sou uma estudante de Informática para Internet</p>
+          <style>
+            .github-link {
+                text-decoration: none; /* Remove underline */
+                color: #333; /* Cor do texto */
+                font-size: 1.5rem; /* Tamanho do ícone */
+            }
+        </style>
+    </head>
+    <div class="container mt-5">
+       
+        <a href="https://github.com/paolaonzara" class="github-link" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a>
     </div>
+      </div>
+      <img src="img/20240304_132540 (1).jpg" alt="Minha foto" class="intro-image">
+  </div>
+    </section>
+    <section id="Sobre">
+      <div class="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Abaixo uma breve introdução sobre mim e um currículo em formato doc para download.</p>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 ">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Breve Introdução</h5>
+                        <p class="card-text">Meu nome é Paola Onório Zaratini, tenho 15 anos. Estou cursando o curso de Informática para Internet na Etec Profª Maria Cristina Medeiros. Moro na cidade de Mauá. Estudo Inglês, Italiano e Alemão. Me interesso pela área de designs.</p>
+                        <a href="img/Currículo Simples com Foto e Informações em Rosa e Branco.pdf" class="btn btn-primary" download>Ver Currículo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="img/20231225_012214.jpg" alt="Minha foto" class="imgretangulo">
+    </section>
+    <section id="Habilidades">
+    <div class="sobre">
+      <h2>Habilidades</h2>
+      <p>Um pouco de minhas habilidades.</p>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar" style="width: 25%">25%</div>
+    </div>
+    <p>HTML</p>
+    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar" style="width: 15%">15%</div>
+    </div> 
+    <p>Phyton</p>
+    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar" style="width: 50%">50%</div>
+    </div>
+    <p>CSS</p>  
+    </section>
+    <section id="Portofólio">
+      <h2>Portofólio</h2>
+      <p>Alguns trabalhos feitos recentemente.</p>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2>Logo projeto SWE</h2>
+            <p>Design da logo para o site Love Laces.</p>
+            <img src="img/Screenshot_20240930_184013_ibisPaint X (1).jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <h2>Protótipo jogo</h2>
+            <p>Design de jogo analógico para trabalho de inglês.</p>
+            <img src="img/66 Sem Título_20240924104645.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <h2>Setembro Amarelo</h2>
+            <p>Lettering para decoração da escola para campanha do Setembro Amarelo.</p>
+            <img src="img/20240918_084500.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section id="Contato">
+      
+      <div class="container mt-5">
+        <h2>Contato</h2>
+        <p>Vamos conversar!</p>
+        <div>
+            <i class="fas fa-phone contact-icon"></i>
+            <span>(11) 97113-3275</span>
+        </div>
+        <div>
+            <i class="fas fa-envelope contact-icon"></i>
+            <span>paolaonzara@gmail.com</span>
+        </div>
+        <div>
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <span>Mauá, São Paulo</span>
+        </div>
+    </div>
+    </section>
+
     
-    <script src="bootstrap-5.3.3-dist\js\bootstrap.bundle.js"></script>
+  <footer>
+    <div class="footrr">
+    <h2>Paola Onório Zaratini</h2>
+    <p style="color: rgba(0, 0, 0, 0.473);">Estudante de tecnica em Informática</p>
+    <style>
+      .github-link {
+          text-decoration: none; /* Remove underline */
+          color: #333; /* Cor do texto */
+          font-size: 1.5rem; /* Tamanho do ícone */
+      }
+  </style>
+</head>
+<div class="container mt-5" style="text-align: end;">
+ 
+  <a href="https://github.com/paolaonzara" class="github-link" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+  </a>
+</div>
+  </div>
+  </footer>  
+    
+    <script src="js\bootstrap.bundle.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   </body>
 </html>
