@@ -128,7 +128,7 @@ footer{
     height: auto; /* Mantém a proporção da imagem */
     max-width: 450%; /* Limite máximo para telas grandes */
     margin-left: 50%;
-    margin-top: -25%;
+    margin-top: -20%;
 }
 
 @media (max-width: 576px) {
